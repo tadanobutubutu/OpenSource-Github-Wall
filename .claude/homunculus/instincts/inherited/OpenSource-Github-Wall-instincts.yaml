@@ -1,0 +1,416 @@
+# Instincts generated from https://github.com/tadanobutubutu/OpenSource-Github-Wall
+# Generated: 2026-06-18T05:21:11.987Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: OpenSource-Github-Wall-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OpenSource-Github-Wall
+---
+
+# OpenSource Github Wall Commit Length
+
+## Action
+
+Keep commit messages concise (~34 characters)
+
+## Evidence
+
+- Average commit message length: 34 chars
+- Based on 35 commits
+
+---
+id: OpenSource-Github-Wall-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OpenSource-Github-Wall
+---
+
+# OpenSource Github Wall Naming Files
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: PascalCase
+
+---
+id: OpenSource-Github-Wall-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OpenSource-Github-Wall
+---
+
+# OpenSource Github Wall Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: OpenSource-Github-Wall-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OpenSource-Github-Wall
+---
+
+# OpenSource Github Wall Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: OpenSource-Github-Wall-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OpenSource-Github-Wall
+---
+
+# OpenSource Github Wall Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: OpenSource-Github-Wall-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OpenSource-Github-Wall
+---
+
+# OpenSource Github Wall Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~14x per month
+- Files: 
+
+---
+id: OpenSource-Github-Wall-workflow-add-contributor-profile
+trigger: "when doing add contributor profile"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OpenSource-Github-Wall
+---
+
+# OpenSource Github Wall Workflow Add Contributor Profile
+
+## Action
+
+Follow the add-contributor-profile workflow:
+1. Create a new JSON file named after the contributor in the contributors/ directory.
+2. Commit the new JSON file with a message indicating the addition.
+3. Optionally, open a pull request for the addition.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~8x per month
+- Files: contributors/*.json
+
+---
+id: OpenSource-Github-Wall-workflow-merge-contributor-profile-pr
+trigger: "when doing merge contributor profile pr"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OpenSource-Github-Wall
+---
+
+# OpenSource Github Wall Workflow Merge Contributor Profile Pr
+
+## Action
+
+Follow the merge-contributor-profile-pr workflow:
+1. Review the pull request containing a new contributors/*.json file.
+2. Merge the pull request into the main branch.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~8x per month
+- Files: contributors/*.json
+
+---
+id: OpenSource-Github-Wall-workflow-update-contributor-grid
+trigger: "when doing update contributor grid"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OpenSource-Github-Wall
+---
+
+# OpenSource Github Wall Workflow Update Contributor Grid
+
+## Action
+
+Follow the update-contributor-grid workflow:
+1. Edit README.md to update the contributor grid or list.
+2. Commit the changes with a message indicating the update.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~8x per month
+- Files: README.md
+
+---
+id: opensource-github-wall-instinct-file-naming
+trigger: "When creating a new file (source, config, or contributor profile)"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct File Naming
+
+## Action
+
+Name the file using PascalCase (e.g., AliHallak.json, Ramana-Giri.json)
+
+## Evidence
+
+- contributors/AliHallak.json
+- contributors/Ramana-Giri.json
+
+---
+id: opensource-github-wall-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct Function Naming
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern: codeStyle.namingConventions.functions = camelCase
+
+---
+id: opensource-github-wall-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct Class Naming
+
+## Action
+
+Use PascalCase for the class name
+
+## Evidence
+
+- Pattern: codeStyle.namingConventions.classes = PascalCase
+
+---
+id: opensource-github-wall-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern: codeStyle.namingConventions.constants = SCREAMING_SNAKE_CASE
+
+---
+id: opensource-github-wall-instinct-import-style
+trigger: "When importing modules or files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern: codeStyle.importStyle = relative
+
+---
+id: opensource-github-wall-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern: codeStyle.exportStyle = named
+
+---
+id: opensource-github-wall-instinct-test-location
+trigger: "When adding tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern: architecture.testLocation = separate
+
+---
+id: opensource-github-wall-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct Commit Format
+
+## Action
+
+Use a short, imperative sentence describing the change (e.g., 'Add AliHallak.json file')
+
+## Evidence
+
+- add AliHallak.json file
+- Add my profile to Open Github Wall
+- Add Ramana-Giri to Open Github Wall 🍉
+
+---
+id: opensource-github-wall-instinct-add-contributor-profile
+trigger: "When someone wants to add themselves as a contributor to the Open Github Wall"
+confidence: 0.98
+domain: workflow
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct Add Contributor Profile
+
+## Action
+
+Create a new JSON file named after the contributor in the contributors/ directory and commit it with a message indicating the addition
+
+## Evidence
+
+- add AliHallak.json file
+- Add my profile to Open Github Wall
+- contributors/AliHallak.json
+
+---
+id: opensource-github-wall-instinct-merge-contributor-profile-pr
+trigger: "When a contributor submits a pull request to add their profile"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct Merge Contributor Profile Pr
+
+## Action
+
+Review the pull request containing a new contributors/*.json file and merge it into the main branch
+
+## Evidence
+
+- Merge pull request #109 from yiralcraft0/Priyanshu-YiralcrafT
+- Pattern: merge-contributor-profile-pr workflow
+
+---
+id: opensource-github-wall-instinct-update-contributor-grid
+trigger: "When new contributors are added or the contributor list needs to be updated"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: tadanobutubutu/OpenSource-Github-Wall
+---
+
+# Opensource Github Wall Instinct Update Contributor Grid
+
+## Action
+
+Edit README.md to update the contributor grid or list and commit the changes with a message indicating the update
+
+## Evidence
+
+- Pattern: update-contributor-grid workflow
+- README.md
+
